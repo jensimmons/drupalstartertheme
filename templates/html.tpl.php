@@ -63,10 +63,7 @@
   <?php print $page; ?>
   <?php print $page_bottom; ?>
   
-<!--
   <script src="<?php print $base_path . $path_to_STARTERKIT; ?>/js/gridset-overlay.min.js"></script>
-  <script src="<?php print $base_path . $path_to_STARTERKIT; ?>/js/script-noDrupal.min.js"></script>
--->
 
 </body>
 </html>

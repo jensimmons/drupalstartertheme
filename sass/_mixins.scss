@@ -61,16 +61,17 @@
 //-----------------------------------------------------------------------
 
 @mixin full-width {
+  @include gs-span(sa, all);    
   @media only screen and (min-width: 600px) and (max-width: 900px) {  // size m
-      @include gs-span(m, 2, 5);    
+      @include gs-span(ma, all);    
       @include clearfix;
   }
   @media only screen and (min-width: 900px) and (max-width: 1200px) {    // size l
-      @include gs-span(l, 2, 6);   
+      @include gs-span(la, all);   
       @include clearfix;
   }
   @media screen and (min-width: 1200px) {    // size e
-      @include gs-span(e, 2, 6);   
+      @include gs-span(ea, all);   
       @include clearfix;    
   }
 }
