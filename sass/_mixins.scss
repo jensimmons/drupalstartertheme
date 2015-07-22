@@ -60,18 +60,18 @@
 // Define Reusable Objects
 //-----------------------------------------------------------------------
 
-@mixin full-width {
-  @include gs-span(sa, all);    
+@mixin full-width { // which is not the full-width of the viewport, but rather has side gutters.
+  @include gs-span(sa, 2, 4);    
   @media only screen and (min-width: 600px) and (max-width: 900px) {  // size m
-      @include gs-span(ma, all);    
+      @include gs-span(ma, 2, 6);    
       @include clearfix;
   }
   @media only screen and (min-width: 900px) and (max-width: 1200px) {    // size l
-      @include gs-span(la, all);   
+      @include gs-span(la, 2, 6);   
       @include clearfix;
   }
   @media screen and (min-width: 1200px) {    // size e
-      @include gs-span(ea, all);   
+      @include gs-span(ea, 2, 6);   
       @include clearfix;    
   }
 }

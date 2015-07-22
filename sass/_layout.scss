@@ -113,22 +113,23 @@ header[role="banner"] {
     margin-right: 0;
     width: 100%;
   }
+  @include gs-span(sa, 2, 4);    
   @media only screen and (min-width: 600px) and (max-width: 900px) {  // size m
     #main {
-//      @include gs-span(m, 3, 5);    
+      @include gs-span(ma, 2, 6);    
       @include clearfix;
     }
   }
   @media only screen and (min-width: 900px) and (max-width: 1200px) {    // size l
     #main {
-//      @include gs-span(l, 2, 5);   
+      @include gs-span(la, 2, 6);   
       @include clearfix;
       min-height: 300px;
     }
   }
   @media screen and (min-width: 1200px) {    // size e
     #main {
-//      @include gs-span(e, 2, 5);   
+      @include gs-span(ea, 2, 6);   
       @include clearfix;    
       min-height: 300px;
     }

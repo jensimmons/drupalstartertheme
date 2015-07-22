@@ -1715,18 +1715,18 @@ header[role="banner"] {
 .messages, .messages--status, .messages--warning, .messages--error {
   margin-top: 2rem;
   margin-bottom: 3em;
-  clear: both;
   display: block;
   float: left;
-  margin-left: 0;
-  width: 100%; }
+  margin-left: 9.8612629224%;
+  margin-right: -100%;
+  width: 80.2774741551%; }
   @media only screen and (min-width: 600px) and (max-width: 900px) {
     .messages, .messages--status, .messages--warning, .messages--error {
-      clear: both;
       display: block;
       float: left;
-      margin-left: 0;
-      width: 100%; }
+      margin-left: 7%;
+      margin-right: -100%;
+      width: 86%; }
       .messages:before, .messages--status:before, .messages--warning:before, .messages--error:before, .messages:after, .messages--status:after, .messages--warning:after, .messages--error:after {
         content: "";
         display: table; }
@@ -1734,11 +1734,11 @@ header[role="banner"] {
         clear: both; } }
   @media only screen and (min-width: 900px) and (max-width: 1200px) {
     .messages, .messages--status, .messages--warning, .messages--error {
-      clear: both;
       display: block;
       float: left;
-      margin-left: 0;
-      width: 100%; }
+      margin-left: 8%;
+      margin-right: -100%;
+      width: 84%; }
       .messages:before, .messages--status:before, .messages--warning:before, .messages--error:before, .messages:after, .messages--status:after, .messages--warning:after, .messages--error:after {
         content: "";
         display: table; }
@@ -1746,11 +1746,11 @@ header[role="banner"] {
         clear: both; } }
   @media screen and (min-width: 1200px) {
     .messages, .messages--status, .messages--warning, .messages--error {
-      clear: both;
       display: block;
       float: left;
-      margin-left: 0;
-      width: 100%; }
+      margin-left: 5.1368366087%;
+      margin-right: -100%;
+      width: 90.8631633913%; }
       .messages:before, .messages--status:before, .messages--warning:before, .messages--error:before, .messages:after, .messages--status:after, .messages--warning:after, .messages--error:after {
         content: "";
         display: table; }
@@ -1772,84 +1772,20 @@ header[role="banner"] {
 @media screen and (min-width: 600px) and (max-width: 900px) {
   header[role="banner"] h1 {
     margin: 30px auto 0; } }
-.node-type-article #main,
-.node-type-content-block #main,
-.node-type-page #main,
-.page-latest #main,
-.page-navigation404 #main,
-.section-comment #main,
-.section-search404 #main,
-.section-toboggan #main,
-.section-user #main {
-  min-height: 200px; }
-.node-type-article .messages, .node-type-article .messages--status, .node-type-article .messages--warning, .node-type-article .messages--error,
-.node-type-content-block .messages,
-.node-type-content-block .messages--status,
-.node-type-content-block .messages--warning,
-.node-type-content-block .messages--error,
-.node-type-page .messages,
-.node-type-page .messages--status,
-.node-type-page .messages--warning,
-.node-type-page .messages--error,
-.page-latest .messages,
-.page-latest .messages--status,
-.page-latest .messages--warning,
-.page-latest .messages--error,
-.page-navigation404 .messages,
-.page-navigation404 .messages--status,
-.page-navigation404 .messages--warning,
-.page-navigation404 .messages--error,
-.section-comment .messages,
-.section-comment .messages--status,
-.section-comment .messages--warning,
-.section-comment .messages--error,
-.section-search404 .messages,
-.section-search404 .messages--status,
-.section-search404 .messages--warning,
-.section-search404 .messages--error,
-.section-toboggan .messages,
-.section-toboggan .messages--status,
-.section-toboggan .messages--warning,
-.section-toboggan .messages--error,
-.section-user .messages,
-.section-user .messages--status,
-.section-user .messages--warning,
-.section-user .messages--error {
-  float: none;
-  margin-left: 0;
-  margin-right: 0;
-  width: 100%; }
-@media only screen and (min-width: 600px) and (max-width: 900px) {
-  .node-type-article #main:before, .node-type-article #main:after,
-  .node-type-content-block #main:before,
-  .node-type-content-block #main:after,
-  .node-type-page #main:before,
-  .node-type-page #main:after,
-  .page-latest #main:before,
-  .page-latest #main:after,
-  .page-navigation404 #main:before,
-  .page-navigation404 #main:after,
-  .section-comment #main:before,
-  .section-comment #main:after,
-  .section-search404 #main:before,
-  .section-search404 #main:after,
-  .section-toboggan #main:before,
-  .section-toboggan #main:after,
-  .section-user #main:before,
-  .section-user #main:after {
-    content: "";
-    display: table; }
-  .node-type-article #main:after,
-  .node-type-content-block #main:after,
-  .node-type-page #main:after,
-  .page-latest #main:after,
-  .page-navigation404 #main:after,
-  .section-comment #main:after,
-  .section-search404 #main:after,
-  .section-toboggan #main:after,
-  .section-user #main:after {
-    clear: both; } }
-@media only screen and (min-width: 900px) and (max-width: 1200px) {
+.node-type-article,
+.node-type-content-block,
+.node-type-page,
+.page-latest,
+.page-navigation404,
+.section-comment,
+.section-search404,
+.section-toboggan,
+.section-user {
+  display: block;
+  float: left;
+  margin-left: 9.8612629224%;
+  margin-right: -100%;
+  width: 80.2774741551%; }
   .node-type-article #main,
   .node-type-content-block #main,
   .node-type-page #main,
@@ -1859,76 +1795,178 @@ header[role="banner"] {
   .section-search404 #main,
   .section-toboggan #main,
   .section-user #main {
-    min-height: 300px; }
-    .node-type-article #main:before, .node-type-article #main:after,
-    .node-type-content-block #main:before,
-    .node-type-content-block #main:after,
-    .node-type-page #main:before,
-    .node-type-page #main:after,
-    .page-latest #main:before,
-    .page-latest #main:after,
-    .page-navigation404 #main:before,
-    .page-navigation404 #main:after,
-    .section-comment #main:before,
-    .section-comment #main:after,
-    .section-search404 #main:before,
-    .section-search404 #main:after,
-    .section-toboggan #main:before,
-    .section-toboggan #main:after,
-    .section-user #main:before,
-    .section-user #main:after {
-      content: "";
-      display: table; }
-    .node-type-article #main:after,
-    .node-type-content-block #main:after,
-    .node-type-page #main:after,
-    .page-latest #main:after,
-    .page-navigation404 #main:after,
-    .section-comment #main:after,
-    .section-search404 #main:after,
-    .section-toboggan #main:after,
-    .section-user #main:after {
-      clear: both; } }
-@media screen and (min-width: 1200px) {
-  .node-type-article #main,
-  .node-type-content-block #main,
-  .node-type-page #main,
-  .page-latest #main,
-  .page-navigation404 #main,
-  .section-comment #main,
-  .section-search404 #main,
-  .section-toboggan #main,
-  .section-user #main {
-    min-height: 300px; }
-    .node-type-article #main:before, .node-type-article #main:after,
-    .node-type-content-block #main:before,
-    .node-type-content-block #main:after,
-    .node-type-page #main:before,
-    .node-type-page #main:after,
-    .page-latest #main:before,
-    .page-latest #main:after,
-    .page-navigation404 #main:before,
-    .page-navigation404 #main:after,
-    .section-comment #main:before,
-    .section-comment #main:after,
-    .section-search404 #main:before,
-    .section-search404 #main:after,
-    .section-toboggan #main:before,
-    .section-toboggan #main:after,
-    .section-user #main:before,
-    .section-user #main:after {
-      content: "";
-      display: table; }
-    .node-type-article #main:after,
-    .node-type-content-block #main:after,
-    .node-type-page #main:after,
-    .page-latest #main:after,
-    .page-navigation404 #main:after,
-    .section-comment #main:after,
-    .section-search404 #main:after,
-    .section-toboggan #main:after,
-    .section-user #main:after {
-      clear: both; } }
+    min-height: 200px; }
+  .node-type-article .messages, .node-type-article .messages--status, .node-type-article .messages--warning, .node-type-article .messages--error,
+  .node-type-content-block .messages,
+  .node-type-content-block .messages--status,
+  .node-type-content-block .messages--warning,
+  .node-type-content-block .messages--error,
+  .node-type-page .messages,
+  .node-type-page .messages--status,
+  .node-type-page .messages--warning,
+  .node-type-page .messages--error,
+  .page-latest .messages,
+  .page-latest .messages--status,
+  .page-latest .messages--warning,
+  .page-latest .messages--error,
+  .page-navigation404 .messages,
+  .page-navigation404 .messages--status,
+  .page-navigation404 .messages--warning,
+  .page-navigation404 .messages--error,
+  .section-comment .messages,
+  .section-comment .messages--status,
+  .section-comment .messages--warning,
+  .section-comment .messages--error,
+  .section-search404 .messages,
+  .section-search404 .messages--status,
+  .section-search404 .messages--warning,
+  .section-search404 .messages--error,
+  .section-toboggan .messages,
+  .section-toboggan .messages--status,
+  .section-toboggan .messages--warning,
+  .section-toboggan .messages--error,
+  .section-user .messages,
+  .section-user .messages--status,
+  .section-user .messages--warning,
+  .section-user .messages--error {
+    float: none;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%; }
+  @media only screen and (min-width: 600px) and (max-width: 900px) {
+    .node-type-article #main,
+    .node-type-content-block #main,
+    .node-type-page #main,
+    .page-latest #main,
+    .page-navigation404 #main,
+    .section-comment #main,
+    .section-search404 #main,
+    .section-toboggan #main,
+    .section-user #main {
+      display: block;
+      float: left;
+      margin-left: 7%;
+      margin-right: -100%;
+      width: 86%; }
+      .node-type-article #main:before, .node-type-article #main:after,
+      .node-type-content-block #main:before,
+      .node-type-content-block #main:after,
+      .node-type-page #main:before,
+      .node-type-page #main:after,
+      .page-latest #main:before,
+      .page-latest #main:after,
+      .page-navigation404 #main:before,
+      .page-navigation404 #main:after,
+      .section-comment #main:before,
+      .section-comment #main:after,
+      .section-search404 #main:before,
+      .section-search404 #main:after,
+      .section-toboggan #main:before,
+      .section-toboggan #main:after,
+      .section-user #main:before,
+      .section-user #main:after {
+        content: "";
+        display: table; }
+      .node-type-article #main:after,
+      .node-type-content-block #main:after,
+      .node-type-page #main:after,
+      .page-latest #main:after,
+      .page-navigation404 #main:after,
+      .section-comment #main:after,
+      .section-search404 #main:after,
+      .section-toboggan #main:after,
+      .section-user #main:after {
+        clear: both; } }
+  @media only screen and (min-width: 900px) and (max-width: 1200px) {
+    .node-type-article #main,
+    .node-type-content-block #main,
+    .node-type-page #main,
+    .page-latest #main,
+    .page-navigation404 #main,
+    .section-comment #main,
+    .section-search404 #main,
+    .section-toboggan #main,
+    .section-user #main {
+      display: block;
+      float: left;
+      margin-left: 8%;
+      margin-right: -100%;
+      width: 84%;
+      min-height: 300px; }
+      .node-type-article #main:before, .node-type-article #main:after,
+      .node-type-content-block #main:before,
+      .node-type-content-block #main:after,
+      .node-type-page #main:before,
+      .node-type-page #main:after,
+      .page-latest #main:before,
+      .page-latest #main:after,
+      .page-navigation404 #main:before,
+      .page-navigation404 #main:after,
+      .section-comment #main:before,
+      .section-comment #main:after,
+      .section-search404 #main:before,
+      .section-search404 #main:after,
+      .section-toboggan #main:before,
+      .section-toboggan #main:after,
+      .section-user #main:before,
+      .section-user #main:after {
+        content: "";
+        display: table; }
+      .node-type-article #main:after,
+      .node-type-content-block #main:after,
+      .node-type-page #main:after,
+      .page-latest #main:after,
+      .page-navigation404 #main:after,
+      .section-comment #main:after,
+      .section-search404 #main:after,
+      .section-toboggan #main:after,
+      .section-user #main:after {
+        clear: both; } }
+  @media screen and (min-width: 1200px) {
+    .node-type-article #main,
+    .node-type-content-block #main,
+    .node-type-page #main,
+    .page-latest #main,
+    .page-navigation404 #main,
+    .section-comment #main,
+    .section-search404 #main,
+    .section-toboggan #main,
+    .section-user #main {
+      display: block;
+      float: left;
+      margin-left: 5.1368366087%;
+      margin-right: -100%;
+      width: 90.8631633913%;
+      min-height: 300px; }
+      .node-type-article #main:before, .node-type-article #main:after,
+      .node-type-content-block #main:before,
+      .node-type-content-block #main:after,
+      .node-type-page #main:before,
+      .node-type-page #main:after,
+      .page-latest #main:before,
+      .page-latest #main:after,
+      .page-navigation404 #main:before,
+      .page-navigation404 #main:after,
+      .section-comment #main:before,
+      .section-comment #main:after,
+      .section-search404 #main:before,
+      .section-search404 #main:after,
+      .section-toboggan #main:before,
+      .section-toboggan #main:after,
+      .section-user #main:before,
+      .section-user #main:after {
+        content: "";
+        display: table; }
+      .node-type-article #main:after,
+      .node-type-content-block #main:after,
+      .node-type-page #main:after,
+      .page-latest #main:after,
+      .page-navigation404 #main:after,
+      .section-comment #main:after,
+      .section-search404 #main:after,
+      .section-toboggan #main:after,
+      .section-user #main:after {
+        clear: both; } }
 
 /* Site-wide rules */
 #footer {
