@@ -1,0 +1,87 @@
+//-----------------------------------------------------------------------
+// Comments
+//-----------------------------------------------------------------------
+
+article.comment {
+  padding: 1em;
+  margin: 2em 0 0;
+}
+.links .comment-add {
+//  @include element-invisible;
+}
+.comments {
+//  text-size: 1rem;
+  h2 {
+    margin-top: 1em;
+  }
+  article.first {
+    margin-top: 0.5em;
+  }
+}
+#comments {
+  clear: both;
+  border-top: 1px solid $light-grey;
+}
+mark.new {
+  display: none;
+}
+.comment-footer {
+  .submitted {
+    @include clearfix;
+    a {
+      margin-top: 0.5rem;      
+    }
+    p.submitted a:link, 
+    p.submitted a:visited {
+      display: block;
+    }
+    .permalink {
+      clear: both;
+      display: block;
+      margin-top: 1rem;
+      @include more-link;
+      font-size: 0.75rem;
+    }
+  }
+  .user-picture {
+    display: block;
+    float: left;
+    margin-right: 0.75rem;
+    margin-bottom: 1rem;
+    img {
+      width: 36px;
+    }
+    a {
+      margin-top: 0;
+    }
+  }
+  .links {
+    clear: both;
+    li {
+      margin: 1em 0;
+    }
+    li:before {
+      content: none;
+    }
+  }
+}
+.indented {
+    margin-left: 2rem;
+    article.comment {
+      margin: 0;
+    }
+}
+
+
+// Error page for Comment that can't be submitted
+
+.page-comment-reply {
+ article {
+   display: none;
+ }
+}
+#comment-form {
+  clear: both;
+}
+
+

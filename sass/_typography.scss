@@ -1,0 +1,407 @@
+// All global typograhy settings are set in variables.css and implemented in normalize.scss
+// This file is for all overrides and specificity
+
+
+//-----------------------------------------------------------------------
+// Get started
+//-----------------------------------------------------------------------
+
+html {
+  font-family: $base-font-family; 
+  font-size: 100%; // sets to 1px
+  -ms-text-size-adjust: 100%; 
+  -webkit-text-size-adjust: 100%; 
+  line-height: $line-height;
+  color: $text-color;
+  letter-spacing: $letter-spacing;
+  word-spacing: $word-spacing;
+}
+
+/**
+ * Links
+ *
+ * The order of link states are based on Eric Meyer's article:
+ * http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states
+ */
+a:link,
+a:visited {
+  color: $link-color;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: lighten($link-color, 10%);
+  text-decoration: none;  
+}
+a:active {
+  color: lighten($link-color, 10%);
+}
+a:focus {
+  outline: thin dotted; // Address `outline` inconsistency between Chrome and other browsers.
+}
+
+#main {
+  a {
+    text-decoration: underline;
+  }
+  .tabs,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    a {
+      text-decoration: none;      
+    }
+  }
+  a.summary-with-player,
+  a.summary-short-content, 
+  a.summary-long,
+  a.tiny-list,
+  a.for-a-list,
+  a.more-link,
+  .ask-question a,
+  .comment-footer a,
+  #comment-form a,
+  .player-metalinks a,
+  .transcript-expander a,
+  .related-episodes a,
+  .topic a,
+  .shownotes a,        // these two should be the same
+  .additional-links a, // these two should be the same
+  #block-nodeblock-767 a,
+  #block-views-topics-block a,
+  .view-footer a {
+      text-decoration: none;    
+  }
+}
+
+
+::-moz-selection {
+  background: $selection-color;
+  text-shadow: none;
+}
+::selection {
+  background: $selection-color;
+  text-shadow: none;
+}
+
+
+p,
+pre {
+  margin: rhythm(0.5) 0; // Set 1 unit of vertical rhythm on the top and bottom margin. 
+}
+article p {
+  text-indent: $indent-amount/2;  
+}
+article header p {
+  text-indent: 0;
+}
+blockquote {
+  margin: rhythm(1) $indent-amount; // Also indent the quote on both sides.
+}
+
+
+
+code,
+kbd,
+pre,
+samp,
+tt,
+var {
+  font-family: $font-monospace; // Correct font family set oddly in Safari 5 and Chrome.
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre-wrap; // Improve readability of pre-formatted text in all browsers.
+}
+
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; // Set consistent quote types.
+}
+
+small {
+  @include small; // Address inconsistent and variable font size in all browsers. 
+}
+
+//-----------------------------------------------------------------------
+// Header, Navigation, Footer
+//-----------------------------------------------------------------------
+
+#header {
+   @include headline;   
+}
+/* The name of the website. */
+.header__site-name {
+  margin: 0;
+  font-size: 5.9vw;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+/* The link around the name of the website. */
+.header__site-link {
+  &:link,
+  &:visited {
+    color: $brand-color;
+  }
+}
+#navigation {
+  background: #f9f9f9;
+ .menu {
+    a:link, a:visited {
+      color: #737373;
+    }
+  }
+}
+#block-menu-block-1--2 {
+  background: $brand-color;
+ .menu {
+    a:link, a:visited {
+      color: #fff;
+    }
+  }
+}
+#navigation,
+#block-menu-block-1--2 {
+  @include clearfix;
+  @include interface; 
+ .menu {
+    li {
+      font-size: 0.825rem;
+      line-height: 1.8em;
+    }
+  }
+}
+
+#footer {
+  color: $footer-text-color;
+  font-size: 90%;
+  line-height: 1.7em;
+  a:link,
+  a:visited {
+    border-bottom: none;
+    color: lighten($link-color, 15);
+  }
+  a:hover,
+  a:focus {
+    color: lighten($link-color, 30);
+  }
+  ul {
+    padding-left: 0;
+  }
+  li {
+    list-style: none;
+  }
+  h2, h3 {
+    color: $footer-text-color;
+    font-size: 1.4rem;
+    line-height: 1.2em;
+    @media screen and (min-width: 600px) {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.links {
+  @include interface-small;
+}
+
+
+//-----------------------------------------------------------------------
+// Headlines
+//-----------------------------------------------------------------------
+//Sizes, font families, and colors are set in variables.scss
+// This is for everything else
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+@mixin h1 {
+    @include headline;
+    font-size: 2.5em;
+    color: $h1-text-color;
+    font-weight: 200;
+    margin: 0.5em 0;
+    a:link,
+    a:visited {
+    color: $h1-link-color;
+    }  
+  @media screen and (min-width: 400px) {
+    font-size: 3rem;
+  }
+  @media screen and (min-width: 600px) {
+    font-size: 4rem;
+  }
+  @media screen and (min-width: 900px) {
+    font-size: 5rem;
+  }
+}
+
+h1 {
+  @include h1;
+}
+
+h2 {
+  @include headline;
+  font-size: 1.8em;
+  color: $h2-text-color;
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  margin: 1em 0 0.25em;
+  a:link,
+  a:visited {
+    color: $h2-link-color;
+    border-bottom: none;
+    display: block;
+  }
+  @media screen and (min-width: 400px) {
+    font-size: 2rem;
+  }
+  @media screen and (min-width: 600px) {
+    font-size: 3rem;
+  }
+}
+h3 {
+  @include headline;
+  font-size: 1.6rem;
+  color: $h3-text-color;
+  font-weight: 600;
+  margin: 1em 0 0.25em;
+  a:link,
+  a:visited {
+    color: $h3-link-color;
+    border-bottom: none;
+  }
+  @media screen and (min-width: 400px) {
+    font-size: 1.8rem;
+  }
+  @media screen and (min-width: 600px) {
+    font-size: 2.25rem;
+  }
+}
+h4 {
+  @include headline;
+  font-size: 1.4rem;
+  color: $h4-text-color;
+  font-weight: 600;
+  margin: 1em 0 0.5em;
+  a:link,
+  a:visited {
+    color: $h4-link-color;
+    border-bottom: none;
+  }
+  @media screen and (min-width: 600px) {
+    font-size: 1.4rem;
+  }
+}
+h5 {
+  @include headline;
+  font-size: 1.2rem;
+  color: $h5-text-color;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin: 1em 0 0;
+  a:link,
+  a:visited {
+    color: $h5-link-color;
+    border-bottom: none;
+  }
+  @media screen and (min-width: 600px) {
+    font-size: 1.5rem;
+  }
+}
+h6 {
+  @include headline;
+  font-size: 1rem;
+  color: $h6-text-color;
+  font-weight: 200;
+  margin: 1em 0 0;
+  a:link,
+  a:visited {
+    color: $h6-link-color;
+    border-bottom: none;
+  }
+}
+
+
+
+
+//-----------------------------------------------------------------------
+// Style Objects
+//-----------------------------------------------------------------------
+
+@mixin aside-text {
+  font-style: italic;
+  font-weight: 400; 
+  font-size: 0.875rem;
+  line-height: 1.5em;
+}
+
+
+
+//-----------------------------------------------------------------------
+// Details
+//-----------------------------------------------------------------------
+
+p.submitted { 
+  margin: 16px 0 0;
+  a:link, a:visited {
+    display: inline;
+  }
+}
+.username {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.permalink {
+  @include interface-small;  
+}
+.progress,
+.messages,
+.tips {
+  @include interface-small;  
+  text-transform: none;
+}
+
+.comment-reply, // link to click and reply to a specific comment
+.comment-edit,
+.comment-delete,
+ul.links, 
+.more-link,
+.p.submitted, //node author & date info line, also for comment submitted info
+.pager,
+.more-help-link,
+.search-info { 
+  @include interface-small;
+  text-transform: uppercase;
+}
+
+.pager-current {
+  border: 1px solid $link-color;
+  color: $link-color;
+  font-weight: normal;
+}
+
+blockquote {
+  border-left: 1px solid $light-grey;
+  padding-left: 1rem;
+  margin-left: 0;
+}
+
+figcaption {
+  @include aside-text;
+  color: lighten($text-color, 25);
+  p {
+    margin-top: 0.5em;
+  }
+}
+
+i {
+  padding-left: 2px;
+}

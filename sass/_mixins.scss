@@ -1,0 +1,77 @@
+//-----------------------------------------------------------------------
+// Universal Tools
+//-----------------------------------------------------------------------
+
+@mixin button-box {
+  padding: 0.25em 0.75em;
+  border: 1px solid #D3808E;
+}
+
+@mixin no-dots { // use this on the ul level
+  li:before {
+    content: none;
+  }
+  li {
+    margin-left: 0;
+  }
+}
+@mixin restore-dots { // use this on the ul level
+  li:before {
+    content:"•";
+  }  
+  li {
+    margin-left: 1em;
+  }
+}
+@mixin clearfix() {
+  &:before,
+  &:after {
+      content: "";
+      display: table;
+  }
+  &:after {
+      clear: both;
+  }
+}
+@mixin element-invisible {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+@mixin element-invisible-off {
+  position: static !important;
+  clip: auto;
+  height: auto;
+  width: auto;
+  overflow: auto;
+}
+@mixin element-focusable {
+  @include element-invisible;
+  &:active,
+  &:focus {
+    @include element-invisible-off;
+  }
+}
+
+
+//-----------------------------------------------------------------------
+// Define Reusable Objects
+//-----------------------------------------------------------------------
+
+@mixin full-width {
+  @media only screen and (min-width: 600px) and (max-width: 900px) {  // size m
+      @include gs-span(m, 2, 5);    
+      @include clearfix;
+  }
+  @media only screen and (min-width: 900px) and (max-width: 1200px) {    // size l
+      @include gs-span(l, 2, 6);   
+      @include clearfix;
+  }
+  @media screen and (min-width: 1200px) {    // size e
+      @include gs-span(e, 2, 6);   
+      @include clearfix;    
+  }
+}
+

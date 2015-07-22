@@ -1,0 +1,157 @@
+// ------------------------------------------------------------------------
+// $CONTENTS
+// ------------------------------------------------------------------------
+
+//    01. $CONTENTS
+//    02. $TRANSPARENT
+//    03. $BLACK ( #000 )
+//    04. $WHITE ( #FFF )
+//    05. $DARK GREY ( #2A2A2A )
+//    06. $LIGHT GREY ( #A8A8A8 )
+
+
+// ------------------------------------------------------------------------
+// $TRANSPARENT
+// ------------------------------------------------------------------------
+
+.mejs-container button { 
+  background-color: transparent; 
+}
+
+// ------------------------------------------------------------------------
+// $BLACK ( #000 )
+// ------------------------------------------------------------------------
+
+// ------------------------------------------
+// $BACKGROUND
+// ------------------------------------------
+
+
+.mejs-embed, .mejs-embed body, // embeded videos like ( youtube - vimeo )
+.mejs-container, // main container
+.mejs-controls .mejs-time-rail .mejs-time-float { // timer tooltip
+  background-color: #000; 
+}
+
+// ------------------------------------------
+// $BORDERS
+// ------------------------------------------
+
+// tooltip bottom pointer
+.mejs-controls .mejs-time-rail .mejs-time-float-corner 
+
+{  border-color: #000 transparent transparent transparent; }
+
+// ------------------------------------------------------------------------
+// $WHITE ( #FFF )
+// ------------------------------------------------------------------------
+
+// ------------------------------------------
+// $BACKGROUND
+// ------------------------------------------
+
+// total time
+.mejs-controls .mejs-time-rail .mejs-time-total 
+
+{ background-color: rgba(255, 255, 255, 0.05); }
+
+// ready ( loaded time ) bar
+.mejs-controls .mejs-time-rail .mejs-time-loaded 
+
+{ background-color: rgba(255, 255, 255, 0.15); }
+
+// volume total
+.mejs-horizontal-volume-slider .mejs-horizontal-volume-total { background-color: rgba(255, 255, 255, 0.2); }
+
+// ------------------------------------------
+// $COLOR
+// ------------------------------------------
+
+// error link
+.me-cannotplay a,
+
+// sourcechooser menu
+.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul li input:checked + label,
+.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul li:hover label
+
+ { color: #FFF;  }
+
+// sourcechooser menu item
+.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul li
+
+{ color: rgba(255, 255, 255, 0.8); }
+
+// ------------------------------------------------------------------------
+// $DARK GREY ( #2A2A2A )
+// ------------------------------------------------------------------------
+
+// ------------------------------------------
+// $BACKGROUND
+// ------------------------------------------
+
+// big paly button
+.mejs-overlay-button,
+
+// loader button
+.mejs-overlay-loading,
+
+// controls
+.mejs-controls,
+
+// sourcechooser list
+.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul
+
+{ background-color: #2A2A2A; }
+
+// ------------------------------------------
+// $BORDERS
+// ------------------------------------------
+
+// sourcechooser menu pointer
+.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector:after
+
+{ border-color: #2a2a2a transparent transparent transparent; } 
+
+// ------------------------------------------------------------------------
+// $LIGHT GREY ( #A8A8A8 )
+// ------------------------------------------------------------------------
+
+
+// ------------------------------------------
+// $COLOR
+// ------------------------------------------
+
+// time
+.mejs-time span
+
+{ color: #A8A8A8; }
+
+// ------------------------------------------------------------------------
+// $LIGHT GREY ( #808080 )
+// ------------------------------------------------------------------------
+
+
+// ------------------------------------------ 
+// $COLOR
+// ------------------------------------------ 
+
+// current time tooltip
+.mejs-controls .mejs-time-rail .mejs-time-float
+
+{ color: #808080; }
+
+
+
+// ------------------------------------------------------------------------ 
+// $BACKGROUND IMAGES
+// ------------------------------------------------------------------------ 
+
+// loader button
+.mejs-overlay-loading span { background-image: url(../images/mediaelement/spinner-white.gif); }
+
+// big play button
+.mejs-overlay-button { background-image: url(../images/mediaelement/play-white.png); }
+
+// controls buttons
+.mejs-button button { background-image: url(../images/mediaelement/controls-white.png); }
+

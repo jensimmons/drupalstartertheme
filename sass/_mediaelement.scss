@@ -1,0 +1,241 @@
+//-----------------------------------------------------------------------
+// Audio Player Size & Layout
+//-----------------------------------------------------------------------
+
+$audioplayer-height: 50px; 
+$audioplayer-playbutton-height: 125px;
+$audioplayer-background: #585858;
+$audioplayer-playbutton-background: $brand-color; 
+
+.mediaelement-audio {
+  height: 125px;
+  margin: 60px 0 -30px;
+}
+.mejs-container {
+  width:100% !important;
+  height: $audioplayer-height !important;
+//  @include border-top-left-radius ($audioplayer-height);  
+//  @include border-bottom-left-radius ($audioplayer-height);  
+}
+.mejs-container .mejs-controls {
+  margin: (($audioplayer-height)-30px)/2 0;
+}
+.mejs-container .mejs-controls div.mejs-playpause-button {
+  background: $audioplayer-playbutton-background;
+  border: 8px solid $audioplayer-background;
+  width: $audioplayer-playbutton-height;
+  height: $audioplayer-playbutton-height;
+  border-radius: ($audioplayer-playbutton-height)/2;
+  margin-top: -((($audioplayer-playbutton-height)-30px)/2);
+  margin-right: 10px;
+  margin-left: 12px;
+  
+  button {
+    background-color: $audioplayer-playbutton-background;    
+    background-image: url("../images/controls.svg");
+    background-position: 10px 2px;
+    background-size: 600px;
+    
+    height: ($audioplayer-playbutton-height)*.6;
+    width: ($audioplayer-playbutton-height)*.6;
+    border-radius: $audioplayer-playbutton-height;  
+    margin: 15px;
+  }
+}
+.mejs-container .mejs-controls div.mejs-pause button {
+  background-position: 5px -62px;
+}
+
+.mejs-controls div.mejs-horizontal-volume-slider {
+  margin-right: 10px;  
+}
+
+@media only screen and (max-width: 500px) { 
+  $audioplayer-height: 30px; 
+  $audioplayer-playbutton-height: 75px;
+  .mediaelement-audio {
+    height: 80px;
+    margin: 40px 0 -20px; 
+  }
+  .mejs-container {
+    width:100% !important;
+    height: $audioplayer-height !important;
+  }
+  .mejs-container .mejs-controls {
+    margin: (($audioplayer-height)-30px)/2 0;
+  }
+  .mejs-container .mejs-controls div.mejs-playpause-button {
+    border: 8px solid $audioplayer-background;
+    width: $audioplayer-playbutton-height;
+    height: $audioplayer-playbutton-height;
+    border-radius: ($audioplayer-playbutton-height)/2;
+    margin-top: -((($audioplayer-playbutton-height)-30px)/2);
+    margin-right: 10px;
+    margin-left: 12px;
+    button {
+      background-position: 4px -1px;
+      background-size: 400px;
+      height: ($audioplayer-playbutton-height)*.6;
+      width: ($audioplayer-playbutton-height)*.6;
+      border-radius: $audioplayer-playbutton-height;  
+      margin: 6px;
+    }
+  }
+  .mejs-container .mejs-controls div.mejs-pause button {
+    background-position: 4px -37px;
+    background-size: 360px;
+  }
+  .mejs-controls div.mejs-horizontal-volume-slider {
+    margin-right: 10px;  
+  }  
+}
+// --- Small Player on Home Page -- SAME AS ABOVE
+
+@media only screen and (min-width: 600px) and (max-width: 760px) { 
+  .front {
+    $audioplayer-height: 30px; 
+    $audioplayer-playbutton-height: 75px;
+    .mediaelement-audio {
+      height: 80px;
+      margin: 40px 0 -20px; 
+    }
+    .mejs-container {
+      width:100% !important;
+      height: $audioplayer-height !important;
+    }
+    .mejs-container .mejs-controls {
+      margin: (($audioplayer-height)-30px)/2 0;
+    }
+    .mejs-container .mejs-controls .mejs-time span {
+      font-size: 10px;
+    }
+    .mejs-container .mejs-controls div.mejs-playpause-button {
+      border: 8px solid $audioplayer-background;
+      width: $audioplayer-playbutton-height;
+      height: $audioplayer-playbutton-height;
+      border-radius: ($audioplayer-playbutton-height)/2;
+      margin-top: -((($audioplayer-playbutton-height)-30px)/2);
+      margin-right: 10px;
+      margin-left: 12px;
+      button {
+        background-position: 4px -1px;
+        background-size: 400px;
+        height: ($audioplayer-playbutton-height)*.6;
+        width: ($audioplayer-playbutton-height)*.6;
+        border-radius: $audioplayer-playbutton-height;  
+        margin: 6px;
+      }
+    }
+    .mejs-container .mejs-controls div.mejs-pause button {
+      background-position: 5px -62px;
+    }
+    .mejs-controls div.mejs-horizontal-volume-slider {
+      margin-right: 10px;  
+    } 
+  }
+}
+
+
+@media only screen and (max-width: 400px) { 
+  .mejs-container .mejs-controls .mejs-time span {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 360px) { 
+  .mejs-container .mejs-controls .mejs-time {
+    padding-top: 9px;
+  }
+  .mejs-currenttime-container,
+  .mejs-time-rail {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 280px) { 
+  .mejs-volume-button,
+  .mejs-horizontal-volume-slider {
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 320px) { 
+  .mejs-volume-button {
+    margin-left: 20px !important;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 340px) { 
+  .mejs-volume-button {
+    margin-left: 35px !important;
+  }
+}
+@media only screen and (min-width: 340px) and (max-width: 360px) { 
+  .mejs-volume-button {
+    margin-left: 50px !important;
+  }
+}
+
+// --- Small Player on Home Page
+
+@media only screen and (max-width: 750px) { 
+
+
+
+
+
+}
+
+
+//-----------------------------------------------------------------------
+// Typography
+//-----------------------------------------------------------------------
+
+.mejs-container .mejs-controls div {
+  font-family: $alt-font; // changes interface font to Avenir
+}
+
+//-----------------------------------------------------------------------
+// Colors
+//-----------------------------------------------------------------------
+
+.mejs-container {
+    background: $audioplayer-background;
+}
+.mejs-controls .mejs-button button {
+  // specifies icons. CSS is the same, the icons are not. 
+  background-image: url("../images/controls.svg"); 
+}
+
+// Fallback for Opera / browsers that don't support mp3
+.me-cannotplay {
+  a,
+  a:link,
+  a:visited,
+  a:active {
+    color: #fff;
+    font-weight: normal;
+  }
+  span {
+    padding: 13px 0 15px 16px;
+  }
+}
+
+
+//-----------------------------------------------------------------------
+// Remove Gradiants 
+//-----------------------------------------------------------------------
+.mejs-container .mejs-controls {
+  background: none; // removes light-source gradiant from overall box
+}
+.mejs-controls .mejs-time-rail .mejs-time-total {
+	background: #aaa;
+}
+.mejs-controls .mejs-time-rail .mejs-time-loaded {
+  background: $brand-color;
+}
+.mejs-controls .mejs-time-rail .mejs-time-current {
+	background: #fff;
+}
+.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total {
+	background: #333;
+}
+.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current {
+	background: #ddd;
+}

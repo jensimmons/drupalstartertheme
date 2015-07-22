@@ -1,0 +1,362 @@
+//-----------------------------------------------------------------------
+// WebForms
+//-----------------------------------------------------------------------
+
+
+
+
+//-----------------------------------------------------------------------
+// Forms
+//-----------------------------------------------------------------------
+// FROM ZEN 
+
+/* Wrapper for a form element (or group of form elements) and its label. */
+.form-item {
+  margin: 0.8em 0;
+
+  /* Pack groups of checkboxes and radio buttons closer together. */
+  .form-checkboxes & ,
+  .form-radios & {
+    /* Drupal core uses "0.4em 0". */
+    margin: 0;
+  }
+
+  /* Form items in a table. */
+  tr.odd &,
+  tr.even & {
+    margin: 0;
+  }
+
+  /* Highlight the form elements that caused a form submission error. */
+  input.error,
+  textarea.error,
+  select.error {
+    border: 1px solid #c00;
+  }
+
+  /* The descriptive help text (separate from the label). */
+  .description {
+    @include text-special;    
+  }
+}
+
+.form-item:first-child {
+  margin-top: 0.4em;
+}
+
+.form-type-radio,
+.form-type-checkbox {
+  .description {
+    margin-left: 2.4em;
+  }
+}
+
+.form-item-notify label {
+  @include text-special;    
+}
+
+/* The part of the label that indicates a required field. */
+.form-required {
+  color: #c00;
+}
+
+.filter-wrapper {
+  padding: 0;
+  font-size: 0.75rem;
+  ul li {
+    font-size: 0.75rem;    
+  }
+}
+
+/* Labels for radios and checkboxes. */
+label.option {
+  display: inline;
+  font-weight: normal;
+}
+
+/* Buttons used by contrib modules like Media. */
+a.button {
+//  @include appearance(button);
+}
+
+/* Password confirmation. */
+.password-parent,
+.confirm-parent {
+  margin: 0;
+}
+
+/* Drupal's default login form block. */
+#user-login-form {
+  text-align: left; /* LTR */
+}
+
+
+
+//-----------------------------------------------------------------------
+
+
+
+
+
+fieldset {
+  margin: 0 2px;
+  border-color: #c0c0c0;
+}
+
+//-----------------------------------------------------------------------
+// Widths
+//-----------------------------------------------------------------------
+
+label {
+  display: block;
+  font-weight: normal;
+  @include interface;
+}
+
+
+//-----------------------------------------------------------------------
+// UI Consistency
+//-----------------------------------------------------------------------
+
+input[type="search"]::-webkit-search-decoration {
+  display: none;
+}
+
+input,
+button,
+a.button,
+select,
+textarea {
+  // Suppress red glow that Firefox
+  // adds to form fields by default.
+  &:invalid {
+    box-shadow: none;
+  }
+  // Add blue glow.
+  &:focus {
+    box-shadow: #0066ff 0 0 5px 0;
+    // for Opera
+    z-index: 1;
+  }
+}
+
+input[type="file"],
+input[type="radio"],
+input[type="checkbox"] {
+  &:focus,
+  &:active {
+    box-shadow: none;
+  }
+}
+
+button,
+a.button,
+input[type="reset"],
+input[type="submit"],
+input[type="button"] {
+  -webkit-appearance: none;
+  background: rgba(255,255,255,0.4);
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  display: inline-block;
+  @include interface;
+  text-transform: none;
+  outline: 0;
+  overflow: visible;
+  margin: 1em 0 0;
+  padding: 8px 16px 6px;
+  text-shadow: white 0 1px 1px;
+  text-decoration: none;
+  vertical-align: top;
+  width: auto;
+  &:hover {
+    background: rgba(255,255,255,0.8);
+    text-decoration: none;
+  }
+  &:active {
+    background: rgba(255,255,255,1);
+  }
+  // IE7
+  *padding-top: 2px;
+  *padding-bottom: 0;
+  // Kill phantom spacing and dotted
+  // border that appears in Firefox.
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+}
+
+a.button {
+  // IE7
+  *padding-bottom: 3px;
+}
+
+button {
+  // IE7
+  *padding-top: 1px;
+  *padding-bottom: 1px;
+}
+
+textarea,
+select,
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+//input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"] {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  border-radius: 2px;
+  -webkit-appearance: none;
+  background-color: #fff;
+  border: 1px solid;
+  border-color: rgba(0,0,0,0.25) rgba(100, 100, 100, 0.25) rgba(220, 220, 220, 0.9);
+  outline: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0.5em 10px;
+  text-align: left;
+  font-size: 0.875rem;
+  vertical-align: top;
+  // IE7
+  *padding-top: 2px;
+  *padding-bottom: 1px;
+  *height: auto;
+  &[disabled] {
+    background-color: #eeeeee;
+  }
+}
+
+div.password-suggestions ul {
+  margin-bottom: 0;
+  list-style: none;
+}
+div.form-item div.password-suggestions {
+  border: 1px solid #ccc;
+  margin: 0.7em 0;
+  padding: 0.8em;
+  width: 100%;
+}
+
+select {
+  padding-top:4px;
+  padding-bottom: 4px;
+}
+
+button[disabled],
+input[disabled],
+select[disabled],
+select[disabled] option,
+select[disabled] optgroup,
+textarea[disabled],
+a.button_disabled {
+  box-shadow: none;
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+  color: #888888;
+  cursor: default;
+}
+
+// Separate rule for Firefox.
+// Separate rule for IE, too.
+// Cannot stack with WebKit's.
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #888888;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #888888;
+}
+
+input.placeholder_text,
+textarea.placeholder_text {
+  color: #888888;
+}
+
+textarea,
+select[size],
+select[multiple] {
+  height: auto;
+}
+
+// Set height back to normal,
+// for Opera, WebKit, and IE.
+select[size="0"],
+select[size="1"] {
+  height: 1.8em;
+  // IE7
+  *height: auto;
+}
+
+// Tweaks for Safari + Chrome.
+@media (-webkit-min-device-pixel-ratio: 0) {
+  select[size],
+  select[multiple],
+  select[multiple][size] {
+    background-image: none;
+    padding-right: 3px;
+  }
+  select,
+  select[size="0"],
+  select[size="1"] {
+    // Base64 encoded "../images/select_arrow.gif"
+    background-image: url(data:image/png;base64,R0lGODlhDQAEAIAAAAAAAP8A/yH5BAEHAAEALAAAAAANAAQAAAILhA+hG5jMDpxvhgIAOw==);
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 20px;
+  }
+  ::-webkit-validation-bubble-message {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #666666), color-stop(1, black));
+    border: 0;
+    color: white;
+    font: 13px / 17px "Lucida Grande", Arial, "Liberation Sans", FreeSans, sans-serif;
+    overflow: hidden;
+    padding: 15px 15px 17px;
+    text-shadow: black 0 0 1px;
+    min-height: 16px;
+  }
+  ::-webkit-validation-bubble-arrow,
+  ::-webkit-validation-bubble-top-outer-arrow,
+  ::-webkit-validation-bubble-top-inner-arrow {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: #666666;
+    border-color: #666666;
+  }
+}
+
+textarea {
+  min-height: 40px;
+  overflow: auto;
+  resize: vertical;
+  width: 100%;
+}
+
+optgroup {
+  color: black;
+  font-style: normal;
+  font-weight: normal;
+  // Font family repeated, for Firefox.
+  font-family: Arial, "Liberation Sans", FreeSans, sans-serif;
+  // Kill phantom spacing and dotted
+  // border that appears in Firefox.
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+}

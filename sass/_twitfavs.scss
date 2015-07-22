@@ -1,0 +1,53 @@
+.block-twitfaves {
+  font-size: 0.875rem;
+  background: none;
+  padding: 0;
+  margin: 20px 0 40px;
+}
+.block-twitfaves .twitfaves-list a {
+  text-decoration: none;
+}
+.block-twitfaves article {
+  list-style: none;
+  margin: 10px 0 15px;
+  padding: 5px 10px 5px 5px;
+}
+.block-twitfaves article:last-child {
+  margin-bottom:0 ;
+}
+.block-twitfaves .tweeters-avatar {
+  float: left;
+  margin: 0 12px 0 0;
+  display: block;
+}
+.block-twitfaves .tweeters-avatar img {
+  height: 48px;
+  width: 48px;
+  border-radius: 8px;
+}
+.block-twitfaves p  {
+  margin: 0 0 0 55px;
+  text-indent: 0;
+  line-height: 1.4em;
+}
+.block-twitfaves .tweeter  {
+  margin: 0 0 0 70px;
+  display: block;
+  font-size: 1em;
+}
+.block-twitfaves .time-ago {
+  margin-left: 55px;
+}
+.block-twitfaves .time-ago a:link,
+.block-twitfaves .time-ago a:visited {
+  color: #b0b0b0;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+.block-twitfaves footer {
+  text-align: right;
+}
+.block-twitfaves footer a {
+  text-decoration: none;
+  font-style: italic;
+}

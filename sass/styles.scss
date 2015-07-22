@@ -1,0 +1,42 @@
+// Import Compass Tools
+//@import "compass";
+
+* { // Switch to Border Box model: http://paulirish.com/2012/box-sizing-border-box-ftw/
+  box-sizing: border-box;
+}
+
+// Now we add our custom helper mixins.
+@import "mixins";
+@import "gridset";
+//@import "fontface";
+//@import "animations";
+
+/* Import Sass mixins, variables, Compass modules, etc. */
+@import "variables";
+
+/* Resetting & Getting Started */
+@import "normalize";
+//@import "typography";
+@import "html";
+@import "drupal";
+@import "forms";
+@import "comments"; 
+@import "logintoboggan"; 
+
+/* Layout rules */
+@import "layout";
+
+/* Site-wide rules */
+@import "page";
+@import "footer"; 
+
+/* Content-specific rules */
+@import "mediaelement"; // Styles audio play from Media Element JS -- DO NOT STEAL MY DESIGN FOR THIS!! MODIFY IT HEAVILY!
+@import "content"; 
+@import "home"; 
+//@import "content-type-1"; 
+//@import "content-type-1"; 
+//@import "content-type-1"; 
+
+/* Alt Media rules */
+@import "print";

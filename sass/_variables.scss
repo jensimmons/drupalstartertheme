@@ -1,0 +1,126 @@
+
+//-----------------------------------------------------------------------
+// Color variables
+//-----------------------------------------------------------------------
+
+$brand-color: #000; 
+
+$text-color: #222; 
+$link-color: darken($brand-color, 10);
+$link-underline-color: lighten($link-color, 15); 
+
+$light-grey: #b4b4b4;
+$lighter-grey: #ddd;
+$footer-text-color: #aaa;
+$footer-line-color: #555;
+
+$selection-color: #F9EEB7;
+$logo-color: #fff;
+
+$block-color: #1078C2; // audio player background
+
+$page-color: #fff; 
+$line-color: #555;
+
+
+$h1-text-color:     $text-color;
+$h2-text-color:     $text-color;
+$h3-text-color:     $text-color;
+$h4-text-color:     $text-color;
+$h5-text-color:     lighten($text-color, 15);
+$h6-text-color:     lighten($text-color, 15);
+
+$h1-link-color:     $text-color;
+$h2-link-color:     $text-color;
+$h3-link-color:     $text-color;
+$h4-link-color:     $text-color;
+$h5-link-color:     $text-color;
+$h6-link-color:     $text-color;
+
+
+//-----------------------------------------------------------------------
+// Fonts 
+//-----------------------------------------------------------------------
+
+$foofont:    "Foo", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+$georgia:    Georgia, "Times New Roman", "DejaVu Serif", serif;
+$courier:    "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
+
+// Now let's create variables for fonts in use
+$base-font-family: $foofont; // The font family set on the html element.
+$font-body:        $foofont;
+$font-monospace:   $courier;
+
+$alt-font:          $foofont;
+$accent-font:       $foofont;
+$monospace-font:    $courier;
+
+$line-height: 1.65em;
+
+@mixin headline {
+  font-family: $foofont;  
+  line-height: 1.1em;
+}
+@mixin interface {
+  font-family: $foofont;  
+  font-size: 1em;
+  letter-spacing: 0;
+  line-height: 1.6em;
+  text-transform: uppercase;
+  word-spacing: 0;    
+}
+@mixin small {
+  font-size: 0.875rem; 
+}
+@mixin interface-small {
+  @include interface;
+  font-size: 0.875em;
+  color: lighten($text-color, 10);
+}
+@mixin more-link {
+  text-transform: uppercase;
+  font-size: 0.875rem;
+}
+@mixin copy-text {
+  font-family: $foofont;
+  font-size: 0.875em;
+}
+@mixin text-special {
+  font-size: 0.75em;
+  color: lighten($text-color, 10);
+  font-style: italic;  
+  text-transform: none;
+  font-family: $base-font-family;
+  line-height: 1.5em;
+  margin-bottom: 2em;
+  margin-top: 0.5em;
+}
+
+
+//-----------------------------------------------------------------------
+// Typography 
+//-----------------------------------------------------------------------
+
+$letter-spacing: 0;
+$word-spacing: 0;
+$indent-amount: 0;
+
+
+//-----------------------------------------------------------------------
+// Zen Drupally Things
+//-----------------------------------------------------------------------
+
+// The height of the navigation container.
+$nav-height: 3em;
+
+// Tab styling.
+$tabs-container-bg: #fff;
+$tabs-border: #bbb;
+
+
+//-----------------------------------------------------------------------
+// Legacy IE support
+//-----------------------------------------------------------------------
+// Zen has tools for supporting IE6, 7, & 8. I ripped out all the IE6&7 stuff. 
+$legacy-support-for-ie8: false;
+

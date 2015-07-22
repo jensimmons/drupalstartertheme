@@ -1,0 +1,156 @@
+
+//-----------------------------------------------------------------------
+// Whole Page Layout
+//-----------------------------------------------------------------------
+
+#navigation,
+#block-menu-block-1--2 {
+  @include clearfix;
+ .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    li {
+      text-align: center;
+      align-items: flex-start;
+      padding: 0 1em; 
+      list-style-type: none;
+      list-style-image: none;
+    }
+    margin: 0.8em 0 0.5em;
+  }
+  @media screen and (min-width: 600px) {   // size m
+    .menu {
+      li {
+        padding: 0 1em; 
+      }
+      margin: 0.8em 0 0.7em;
+    }
+  }
+}
+
+header[role="banner"] {
+  @include clearfix;
+  width: 100%;
+  h1 {
+    text-align: center;
+    margin: 2rem auto 0;
+    font-size: 10.5vw;  
+  }
+  clear:both;
+  box-shadow: 0 -15px 10px -20px rgba(0, 0, 0, 0.3);
+}
+#main {
+  @include clearfix;
+  @media only screen and (max-width: 600px) {    // size s
+    margin-top: 1em;
+    margin-bottom: 2em;
+    margin-right: auto;
+    margin-left: auto;
+    width: 88%;
+  }
+  @media only screen and (min-width: 600px) and (max-width: 900px) {  // size m
+    margin-top: 2em;
+    margin-bottom: 3em;
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+  }
+  @media only screen and (min-width: 900px) {    // size l & e
+    margin-top: 3em;
+    margin-bottom: 6em;
+  }
+}
+.tabs-primary {
+  margin-top: -0.5em;
+  margin-bottom: 2.5em;       
+  clear: both;      
+}
+.messages {
+  margin-top: 2rem;
+  margin-bottom: 3em;
+  @include full-width;
+}
+#pre-footer,
+#footer {
+  @include clearfix;
+  clear: both;  
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {   // size m
+  header[role="banner"] {
+    h1 {
+      margin: 30px auto 0;
+    }
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {   // size l
+  
+}
+
+//-----------------------------------------------------------------------
+// Page
+//-----------------------------------------------------------------------
+
+.node-type-article,
+.node-type-content-block,
+.node-type-page,
+
+.page-latest,
+.page-navigation404,
+
+.section-comment,
+.section-search404,
+.section-toboggan,
+.section-user {
+  #main {
+   min-height: 200px;
+  }
+  .messages {
+    float: none;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+  @media only screen and (min-width: 600px) and (max-width: 900px) {  // size m
+    #main {
+//      @include gs-span(m, 3, 5);    
+      @include clearfix;
+    }
+  }
+  @media only screen and (min-width: 900px) and (max-width: 1200px) {    // size l
+    #main {
+//      @include gs-span(l, 2, 5);   
+      @include clearfix;
+      min-height: 300px;
+    }
+  }
+  @media screen and (min-width: 1200px) {    // size e
+    #main {
+//      @include gs-span(e, 2, 5);   
+      @include clearfix;    
+      min-height: 300px;
+    }
+  }
+}
+
+
+//-----------------------------------------------------------------------
+// Foo
+//-----------------------------------------------------------------------
+
+.foo {
+  @media only screen and (max-width: 600px) {    // size s
+    
+  }
+  @media only screen and (min-width: 600px) and (max-width: 900px) {  // size m
+    
+  }
+  @media only screen and (min-width: 900px) and (max-width: 1200px) {    // size l
+    
+  }
+  @media screen and (min-width: 1200px) {    // size e
+    
+  }
+}
