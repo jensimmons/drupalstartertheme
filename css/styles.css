@@ -1772,6 +1772,7 @@ header[role="banner"] {
 @media screen and (min-width: 600px) and (max-width: 900px) {
   header[role="banner"] h1 {
     margin: 30px auto 0; } }
+.wrapper,
 .node-type-article,
 .node-type-content-block,
 .node-type-page,
@@ -1786,6 +1787,7 @@ header[role="banner"] {
   margin-left: 9.8612629224%;
   margin-right: -100%;
   width: 80.2774741551%; }
+  .wrapper #main,
   .node-type-article #main,
   .node-type-content-block #main,
   .node-type-page #main,
@@ -1796,7 +1798,11 @@ header[role="banner"] {
   .section-toboggan #main,
   .section-user #main {
     min-height: 200px; }
-  .node-type-article .messages, .node-type-article .messages--status, .node-type-article .messages--warning, .node-type-article .messages--error,
+  .wrapper .messages, .wrapper .messages--status, .wrapper .messages--warning, .wrapper .messages--error,
+  .node-type-article .messages,
+  .node-type-article .messages--status,
+  .node-type-article .messages--warning,
+  .node-type-article .messages--error,
   .node-type-content-block .messages,
   .node-type-content-block .messages--status,
   .node-type-content-block .messages--warning,
@@ -1834,6 +1840,7 @@ header[role="banner"] {
     margin-right: 0;
     width: 100%; }
   @media only screen and (min-width: 600px) and (max-width: 900px) {
+    .wrapper #main,
     .node-type-article #main,
     .node-type-content-block #main,
     .node-type-page #main,
@@ -1848,7 +1855,9 @@ header[role="banner"] {
       margin-left: 7%;
       margin-right: -100%;
       width: 86%; }
-      .node-type-article #main:before, .node-type-article #main:after,
+      .wrapper #main:before, .wrapper #main:after,
+      .node-type-article #main:before,
+      .node-type-article #main:after,
       .node-type-content-block #main:before,
       .node-type-content-block #main:after,
       .node-type-page #main:before,
@@ -1867,6 +1876,7 @@ header[role="banner"] {
       .section-user #main:after {
         content: "";
         display: table; }
+      .wrapper #main:after,
       .node-type-article #main:after,
       .node-type-content-block #main:after,
       .node-type-page #main:after,
@@ -1878,6 +1888,7 @@ header[role="banner"] {
       .section-user #main:after {
         clear: both; } }
   @media only screen and (min-width: 900px) and (max-width: 1200px) {
+    .wrapper #main,
     .node-type-article #main,
     .node-type-content-block #main,
     .node-type-page #main,
@@ -1893,7 +1904,9 @@ header[role="banner"] {
       margin-right: -100%;
       width: 84%;
       min-height: 300px; }
-      .node-type-article #main:before, .node-type-article #main:after,
+      .wrapper #main:before, .wrapper #main:after,
+      .node-type-article #main:before,
+      .node-type-article #main:after,
       .node-type-content-block #main:before,
       .node-type-content-block #main:after,
       .node-type-page #main:before,
@@ -1912,6 +1925,7 @@ header[role="banner"] {
       .section-user #main:after {
         content: "";
         display: table; }
+      .wrapper #main:after,
       .node-type-article #main:after,
       .node-type-content-block #main:after,
       .node-type-page #main:after,
@@ -1923,6 +1937,7 @@ header[role="banner"] {
       .section-user #main:after {
         clear: both; } }
   @media screen and (min-width: 1200px) {
+    .wrapper #main,
     .node-type-article #main,
     .node-type-content-block #main,
     .node-type-page #main,
@@ -1938,7 +1953,9 @@ header[role="banner"] {
       margin-right: -100%;
       width: 90.8631633913%;
       min-height: 300px; }
-      .node-type-article #main:before, .node-type-article #main:after,
+      .wrapper #main:before, .wrapper #main:after,
+      .node-type-article #main:before,
+      .node-type-article #main:after,
       .node-type-content-block #main:before,
       .node-type-content-block #main:after,
       .node-type-page #main:before,
@@ -1957,6 +1974,7 @@ header[role="banner"] {
       .section-user #main:after {
         content: "";
         display: table; }
+      .wrapper #main:after,
       .node-type-article #main:after,
       .node-type-content-block #main:after,
       .node-type-page #main:after,
