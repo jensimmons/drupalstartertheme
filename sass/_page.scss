@@ -17,7 +17,7 @@ body {
 }
 
 #footer { 
-  background: rgba(0,0,0,0.94);
+  background: $footer-background-color;
   padding: 1em 0;
   a:link, a:visited {
     color: lighten($link-color, 15);

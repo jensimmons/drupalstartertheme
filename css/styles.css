@@ -169,6 +169,369 @@ th {
 figure {
   margin: 0; }
 
+html {
+  font-family: "Foo", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-size: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.65em;
+  color: #222;
+  letter-spacing: 0;
+  word-spacing: 0; }
+
+/**
+ * Links
+ *
+ * The order of link states are based on Eric Meyer's article:
+ * http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states
+ */
+a:link,
+a:visited {
+  color: black;
+  text-decoration: none; }
+
+a:hover,
+a:focus {
+  color: #1a1a1a;
+  text-decoration: none; }
+
+a:active {
+  color: #1a1a1a; }
+
+a:focus {
+  outline: thin dotted; }
+
+#main a {
+  text-decoration: underline; }
+#main .tabs a,
+#main h1 a,
+#main h2 a,
+#main h3 a,
+#main h4 a,
+#main h5 a,
+#main h6 a {
+  text-decoration: none; }
+#main a.summary-with-player,
+#main a.summary-short-content,
+#main a.summary-long,
+#main a.tiny-list,
+#main a.for-a-list,
+#main a.more-link,
+#main .ask-question a,
+#main .comment-footer a,
+#main #comment-form a,
+#main .player-metalinks a,
+#main .transcript-expander a,
+#main .related-episodes a,
+#main .topic a,
+#main .shownotes a,
+#main .additional-links a,
+#main #block-nodeblock-767 a,
+#main #block-views-topics-block a,
+#main .view-footer a {
+  text-decoration: none; }
+
+::-moz-selection {
+  background: #F9EEB7;
+  text-shadow: none; }
+
+::selection {
+  background: #F9EEB7;
+  text-shadow: none; }
+
+p,
+pre {
+  margin: rhythm(0.5) 0; }
+
+article p {
+  text-indent: 0; }
+
+article header p {
+  text-indent: 0; }
+
+blockquote {
+  margin: rhythm(1) 0; }
+
+code,
+kbd,
+pre,
+samp,
+tt,
+var {
+  font-family: "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
+  font-size: 1em; }
+
+pre {
+  white-space: pre-wrap; }
+
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+small {
+  font-size: 0.875rem; }
+
+#header {
+  font-family: "Foo", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  line-height: 1.1em; }
+
+/* The name of the website. */
+.header__site-name {
+  margin: 0;
+  font-size: 5.9vw;
+  text-transform: uppercase;
+  font-weight: 800; }
+
+/* The link around the name of the website. */
+.header__site-link:link, .header__site-link:visited {
+  color: #000; }
+
+#navigation {
+  background: #f9f9f9; }
+  #navigation .menu a:link, #navigation .menu a:visited {
+    color: #737373; }
+
+#block-menu-block-1--2 {
+  background: #000; }
+  #block-menu-block-1--2 .menu a:link, #block-menu-block-1--2 .menu a:visited {
+    color: #fff; }
+
+#navigation,
+#block-menu-block-1--2 {
+  font-family: "Foo", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-size: 1em;
+  letter-spacing: 0;
+  line-height: 1.6em;
+  text-transform: uppercase;
+  word-spacing: 0; }
+  #navigation:before, #navigation:after,
+  #block-menu-block-1--2:before,
+  #block-menu-block-1--2:after {
+    content: "";
+    display: table; }
+  #navigation:after,
+  #block-menu-block-1--2:after {
+    clear: both; }
+  #navigation .menu li,
+  #block-menu-block-1--2 .menu li {
+    font-size: 0.825rem;
+    line-height: 1.8em; }
+
+#footer {
+  color: #aaa;
+  font-size: 90%;
+  line-height: 1.7em; }
+  #footer a:link,
+  #footer a:visited {
+    border-bottom: none;
+    color: #262626; }
+  #footer a:hover,
+  #footer a:focus {
+    color: #4d4d4d; }
+  #footer ul {
+    padding-left: 0; }
+  #footer li {
+    list-style: none; }
+  #footer h2, #footer h3 {
+    color: #aaa;
+    font-size: 1.4rem;
+    line-height: 1.2em; }
+    @media screen and (min-width: 600px) {
+      #footer h2, #footer h3 {
+        font-size: 1.6rem; } }
+
+.links {
+  font-family: "Foo", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-size: 1em;
+  letter-spacing: 0;
+  line-height: 1.6em;
+  text-transform: uppercase;
+  word-spacing: 0;
+  font-size: 0.875em;
+  color: #3c3c3c; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+h1 {
+  font-family: "Foo", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  line-height: 1.1em;
+  font-size: 2.5em;
+  color: #222;
+  font-weight: 200;
+  margin: 0.5em 0; }
+  h1 a:link,
+  h1 a:visited {
+    color: #222; }
+  @media screen and (min-width: 400px) {
+    h1 {
+      font-size: 3rem; } }
+  @media screen and (min-width: 600px) {
+    h1 {
+      font-size: 4rem; } }
+  @media screen and (min-width: 900px) {
+    h1 {
+      font-size: 5rem; } }
+
+h2 {
+  font-family: "Foo", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  line-height: 1.1em;
+  font-size: 1.8em;
+  color: #222;
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  margin: 1em 0 0.25em; }
+  h2 a:link,
+  h2 a:visited {
+    color: #222;
+    border-bottom: none;
+    display: block; }
+  @media screen and (min-width: 400px) {
+    h2 {
+      font-size: 2rem; } }
+  @media screen and (min-width: 600px) {
+    h2 {
+      font-size: 3rem; } }
+
+h3 {
+  font-family: "Foo", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  line-height: 1.1em;
+  font-size: 1.6rem;
+  color: #222;
+  font-weight: 600;
+  margin: 1em 0 0.25em; }
+  h3 a:link,
+  h3 a:visited {
+    color: #222;
+    border-bottom: none; }
+  @media screen and (min-width: 400px) {
+    h3 {
+      font-size: 1.8rem; } }
+  @media screen and (min-width: 600px) {
+    h3 {
+      font-size: 2.25rem; } }
+
+h4 {
+  font-family: "Foo", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  line-height: 1.1em;
+  font-size: 1.4rem;
+  color: #222;
+  font-weight: 600;
+  margin: 1em 0 0.5em; }
+  h4 a:link,
+  h4 a:visited {
+    color: #222;
+    border-bottom: none; }
+  @media screen and (min-width: 600px) {
+    h4 {
+      font-size: 1.4rem; } }
+
+h5 {
+  font-family: "Foo", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  line-height: 1.1em;
+  font-size: 1.2rem;
+  color: #484848;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin: 1em 0 0; }
+  h5 a:link,
+  h5 a:visited {
+    color: #222;
+    border-bottom: none; }
+  @media screen and (min-width: 600px) {
+    h5 {
+      font-size: 1.5rem; } }
+
+h6 {
+  font-family: "Foo", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  line-height: 1.1em;
+  font-size: 1rem;
+  color: #484848;
+  font-weight: 200;
+  margin: 1em 0 0; }
+  h6 a:link,
+  h6 a:visited {
+    color: #222;
+    border-bottom: none; }
+
+p.submitted {
+  margin: 16px 0 0; }
+  p.submitted a:link, p.submitted a:visited {
+    display: inline; }
+
+.username {
+  font-size: 1.5rem;
+  font-weight: 300; }
+
+.permalink {
+  font-family: "Foo", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-size: 1em;
+  letter-spacing: 0;
+  line-height: 1.6em;
+  text-transform: uppercase;
+  word-spacing: 0;
+  font-size: 0.875em;
+  color: #3c3c3c; }
+
+.progress,
+.messages,
+.messages--status,
+.messages--warning,
+.messages--error,
+.tips {
+  font-family: "Foo", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-size: 1em;
+  letter-spacing: 0;
+  line-height: 1.6em;
+  text-transform: uppercase;
+  word-spacing: 0;
+  font-size: 0.875em;
+  color: #3c3c3c;
+  text-transform: none; }
+
+.comment-reply,
+.comment-edit,
+.comment-delete,
+ul.links,
+.more-link,
+.p.submitted,
+.pager,
+.more-help-link,
+.search-info {
+  font-family: "Foo", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-size: 1em;
+  letter-spacing: 0;
+  line-height: 1.6em;
+  text-transform: uppercase;
+  word-spacing: 0;
+  font-size: 0.875em;
+  color: #3c3c3c;
+  text-transform: uppercase; }
+
+.pager-current {
+  border: 1px solid black;
+  color: black;
+  font-weight: normal; }
+
+blockquote {
+  border-left: 1px solid #b4b4b4;
+  padding-left: 1rem;
+  margin-left: 0; }
+
+figcaption {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.5em;
+  color: #626262; }
+  figcaption p {
+    margin-top: 0.5em; }
+
+i {
+  padding-left: 2px; }
+
 img {
   max-width: 100%;
   height: auto; }
@@ -1569,7 +1932,7 @@ header[role="banner"] {
 
 /* Site-wide rules */
 #footer {
-  background: rgba(0, 0, 0, 0.94);
+  background: #777;
   padding: 1em 0; }
   #footer a:link, #footer a:visited {
     color: #262626; }
