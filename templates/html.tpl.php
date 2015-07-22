@@ -34,8 +34,9 @@
 <meta name="theme-color" content="#c82a4e">
 
   <?php print $styles; ?>
+  
+  <!-- If using a font service or other Javascript solution for loading fonts, do so here -->
 
-  <script type="text/javascript" src="http://fast.fonts.net/jsapi/df5ca259-7a2c-4a93-9c96-610adc1bcb0a.js"></script>
   <?php print $scripts; ?>
   <?php if ($add_html5_shim and !$add_respond_js): ?>
     <!--[if lt IE 9]>
@@ -62,7 +63,10 @@
   <?php print $page; ?>
   <?php print $page_bottom; ?>
   
-  <script src="<?php print $base_path . $path_to_thewebahead; ?>/js/gridset-overlay.min.js"></script>
-  <script src="<?php print $base_path . $path_to_thewebahead; ?>/js/script-noDrupal.min.js"></script>
+<!--
+  <script src="<?php print $base_path . $path_to_STARTERKIT; ?>/js/gridset-overlay.min.js"></script>
+  <script src="<?php print $base_path . $path_to_STARTERKIT; ?>/js/script-noDrupal.min.js"></script>
+-->
+
 </body>
 </html>
