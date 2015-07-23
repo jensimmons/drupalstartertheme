@@ -9,10 +9,6 @@
 ?>
 
 <div class="wrapper">
-
-  <nav role="navigation" id="navigation">
-    <?php print render($page['navigation']); ?>
-  </nav>
   
   <header role="banner">
     <?php if ($logo): ?>
@@ -27,6 +23,10 @@
     <?php print render($page['header']); ?>
   </header>
 
+  <nav role="navigation" id="navigation">
+    <?php print render($page['navigation']); ?>
+  </nav>
+  
   <main id="main" role="main" tabindex="0">
     <?php print render($page['highlighted']); ?>
     <?php print $breadcrumb; ?>
