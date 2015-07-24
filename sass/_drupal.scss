@@ -1,12 +1,19 @@
-/**
- * @file
- * SMACSS Modules
- *
- * Adds modular sets of styles.
- *
- * Additional useful selectors can be found in Zen's online documentation.
- * https://drupal.org/node/1707736
- */
+//Views Overrides 
+//----------------------------------
+
+.views-view-grid {
+  display: flex;
+  flex-flow: row wrap;
+  @include no-dots;
+  li {
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #eee;
+    
+  }
+}
+
+
 
 /**
  * Accessibility features.
