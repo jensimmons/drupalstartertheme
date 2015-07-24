@@ -92,19 +92,18 @@ header[role="banner"] {
 //-----------------------------------------------------------------------
 // Page
 //-----------------------------------------------------------------------
-.wrapper, // this should come out! But it at least gets the theme started with space on the sides of every page
 
-.node-type-article,
-.node-type-content-block,
-.node-type-page,
+//.node-type-article,
+//.node-type-content-block,
+//.node-type-page,
 
-.page-latest,
 .page-navigation404,
 
-.section-comment,
-.section-search404,
-.section-toboggan,
-.section-user {
+//.section-comment,
+//.section-search404,
+////.section-toboggan,
+//.section-user 
+.wrapper {
   #main {
    min-height: 200px;
   }
