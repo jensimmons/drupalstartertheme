@@ -9,7 +9,7 @@
  .menu {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     li {
       text-align: center;
       align-items: flex-start;
@@ -33,9 +33,8 @@ header[role="banner"] {
   @include clearfix;
   width: 100%;
   h1 {
-    text-align: center;
-    margin: 2rem auto 0;
-    font-size: 10.5vw;  
+    margin: 2rem 0 0;
+    font-size: 5.5vw;  
   }
   clear:both;
   box-shadow: 0 -15px 10px -20px rgba(0, 0, 0, 0.3);
