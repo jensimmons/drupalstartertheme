@@ -149,7 +149,6 @@ small {
   }
 }
 #navigation {
-  background: #f9f9f9;
  .menu {
     a:link, a:visited {
       color: #737373;
@@ -168,6 +167,7 @@ small {
 #block-menu-block-1--2 {
   @include clearfix;
   @include interface; 
+  text-transform: none;
  .menu {
     li {
       font-size: 0.825rem;
@@ -222,7 +222,7 @@ small {
  */
 @mixin h1 {
     @include headline;
-    font-size: 2.5em;
+    font-size: 1.8em;
     color: $h1-text-color;
     font-weight: 200;
     margin: 0.5em 0;
@@ -231,13 +231,13 @@ small {
     color: $h1-link-color;
     }  
   @media screen and (min-width: 400px) {
-    font-size: 3rem;
+    font-size: 2.0rem;
   }
   @media screen and (min-width: 600px) {
-    font-size: 4rem;
+    font-size: 2.2rem;
   }
   @media screen and (min-width: 900px) {
-    font-size: 5rem;
+    font-size: 2.4rem;
   }
 }
 
@@ -247,7 +247,7 @@ h1 {
 
 h2 {
   @include headline;
-  font-size: 1.8em;
+  font-size: 1.2em;
   color: $h2-text-color;
   font-weight: 600;
   text-transform: none;
@@ -261,15 +261,15 @@ h2 {
     display: block;
   }
   @media screen and (min-width: 400px) {
-    font-size: 2rem;
+//    font-size: 1.5rem;
   }
   @media screen and (min-width: 600px) {
-    font-size: 3rem;
+//    font-size: 1.3rem;
   }
 }
 h3 {
   @include headline;
-  font-size: 1.6rem;
+  font-size: 1.0rem;
   color: $h3-text-color;
   font-weight: 600;
   margin: 1em 0 0.25em;
@@ -279,10 +279,10 @@ h3 {
     border-bottom: none;
   }
   @media screen and (min-width: 400px) {
-    font-size: 1.8rem;
+//    font-size: 1.8rem;
   }
   @media screen and (min-width: 600px) {
-    font-size: 2.25rem;
+//    font-size: 2.25rem;
   }
 }
 h4 {
